@@ -1,4 +1,5 @@
-let projects = [ { name: "Venues Map, React App", link: "https://github.com/WKDavid/ReactVenuesMapApp", image: "img/ReactVenuesApp.png", visibility: true },
+let projects = [ { name: "Global Solutions, React App", link: "http://gsrentz.com/", image: "img/gsolutions.png", visibility: true },
+                 { name: "Venues Map, React App", link: "https://github.com/WKDavid/ReactVenuesMapApp", image: "img/ReactVenuesApp.png", visibility: true },
                  { name: "My Reads, React App", link: "https://github.com/WKDavid/MyReadsReactApp", image: "img/MyReadsReact.png", visibility: true },
                  { name: "Restaurant Reviews, Web App", link: "https://github.com/WKDavid/RestaurantReviewsWebApp", image: "img/RestaurantReviews.png", visibility: true },
                  { name: "Feed Reader Testing, Jasmine", link: "https://github.com/WKDavid/FeedReaderTesting", image: "img/FeedReader.png", visibility: true },
@@ -15,8 +16,8 @@ shortBio.innerHTML = `Welcome to my portfolio, please allow me a brief introduct
                       While on the path of gaining first higher education, I was working as a System administrator and Full Stack developer for a Moscow branch of building company “Wesemann Group GmbH”.
                       In 2004 I’ve moved to Frankfurt, Germany, where I continued studying Computer Science, as well as Philosophy and History of Arts.
                       Simultaneously, I’ve been working as a system and network administrator for two hotel chains; “Meininger” and “Colour”.
-                      In 2013 I’ve moved to Los Angeles, California. Here, at <a class="udaLink" href="https://profiles.udacity.com/p/10857701521" target="_blank"><i>Udacity</i></a>,
-                      I have gained additional education in modern Front-End Web Development.
+                      In 2013 I’ve moved to Los Angeles, California. Here, at <a class="udaLink" href="https://profiles.udacity.com/p/10857701521" target="_blank"><i>Udacity</i></a> and Udemy,
+                      I have gained additional education in modern Web Development.
                       Please have a look at my projects in order to subjectively assess my skill set, which includes: JavaScript, HTML, CSS, SASS, XML, React, Angular, Java, Python and XML.`;
 
 projectsToRender = () => {

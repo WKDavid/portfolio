@@ -13,7 +13,9 @@
 
 .top-part {
   width: 100%;
-  display: block;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .logo {
@@ -26,10 +28,10 @@
 .name-proff {
   font-size: calc(10px + (30 - 10) * ((100vw - 300px) / (1600 - 300)));
   color: #596574;
-  float: right;
 }
 
 .full-name, .proff {
+  text-align: center;
   margin: auto;
   background:url('../img/gTexture.jpg');
   background-repeat:repeat-x;
@@ -56,6 +58,16 @@
   height: 28vw;
   max-width: 699px;
   max-height: 524px;
+}
+
+.contact-info {
+  font-weight: bold;
+  line-height: 2;
+  font-size: calc(10px + (27 - 12) * ((100vw - 300px) / (1600 - 300)));
+  color: #ffffff;
+  -webkit-animation: neonGlow 2s ease-out 0s alternate infinite none running;
+  -moz-animation: neonGlow 2s ease-out 0s alternate infinite none running;
+  animation: neonGlow 2s ease-out 0s alternate infinite none running;
 }
 
 .shortBio {
@@ -94,6 +106,17 @@
   justify-content: space-around;
 }
 
+.contact-info-cont, .projectContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.contact-info-cont{
+  width: 70%;
+  margin-left: 3%;
+}
+
 .projectContainer {
   align-items: center;
   border-style: solid;
@@ -104,9 +127,6 @@
   width: 20vw;
   height: 20vw;
   margin: 0.3vw;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
 }
 
 .links {
@@ -156,9 +176,36 @@ a, a:visited, a:hover, a:active {
     100% {color:#596574;}
 }
 
+@keyframes neonGlow {
+  from {
+    text-shadow: 0 0 10px #2a2a2d, 0 0 20px #2a2a2d, 0 0 30px #2a2a2d, 0 0 40px #1d1d1d, 0 0 70px #1d1d1d, 0 0 80px #1d1d1d, 0 0 100px #1d1d1d, 0 0 150px #1d1d1d;
+  }
+  to {
+    text-shadow: 0 0 5px #2a2a2d, 0 0 10px #2a2a2d, 0 0 15px #2a2a2d, 0 0 20px #1d1d1d, 0 0 35px #1d1d1d, 0 0 40px #1d1d1d, 0 0 50px #1d1d1d, 0 0 75px #1d1d1d;
+  }
+}
+
 @media screen and (max-width: 1100px) {
   .projectContainer {
     width: 30vw;
     height: 30vw;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .contact-info-cont{
+    width: 63%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .contact-info-cont{
+    width: 57%;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .contact-info-cont{
+    width: 55%;
   }
 }
