@@ -16,9 +16,10 @@ shortBio.innerHTML = `Welcome to my portfolio, please allow me a brief introduct
                       While on the path of gaining first higher education, I was working as a System administrator and Full Stack developer for a Moscow branch of building company “Wesemann Group GmbH”.
                       In 2004 I’ve moved to Frankfurt, Germany, where I continued studying Computer Science, as well as Philosophy and History of Arts.
                       Simultaneously, I’ve been working as a system and network administrator for two hotel chains; “Meininger” and “Colour”.
-                      In 2013 I’ve moved to Los Angeles, California. Here, at <a class="udaLink" href="https://profiles.udacity.com/p/10857701521" target="_blank"><i>Udacity</i></a> and Udemy,
-                      I have gained additional education in modern Web Development.
-                      Please have a look at my projects in order to subjectively assess my skill set, which includes: JavaScript, HTML, CSS, SASS, XML, React, Angular, Java, Python and XML.`;
+                      In 2013 I’ve moved to Los Angeles, California. Here, at Udacity and Udemy, I have gained additional education in modern Web Development.
+                      Please have a look at my projects in order to subjectively assess my skill set, which includes: JavaScript, jQuery, CSS, PHP, HTML, XHTML, XML, AngularJS, BackboneJS, EmberJS,
+                      Bootstrap, Java, .Net, ASP.NET, Python, MySQL, GitHub, Apache Flex, JavaFX, cPanel, WordPress, Shopify, WooCommerce and big variety of graphic design programs such as:
+                      Photoshop, Lightroom, Illustrator, InDesign, Animate, Dreamweaver, Fuse, Adobe Muse etc.`;
 
 projectsToRender = () => {
   let projectList = document.getElementsByClassName("projectList")[0];
