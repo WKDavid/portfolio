@@ -11,7 +11,7 @@ let projects = [ { name: "Global Solutions, React App", link: "http://gsrentz.co
                  { name: "Business Card for Android, XML", link: "https://github.com/WKDavid/Business-Card-for-Android", image: "img/bcapp.png", visibility: true } ];
 
 let shortBio = document.getElementsByClassName("shortBio")[0];
-shortBio.innerHTML = `Welcome to my portfolio, please allow me a brief introduction.
+shortBio.innerHTML = `Welcome to my world, please allow me a brief introduction.
                       Being passionate about computer sciences since adolescent years, I've widened my horizons by gaining Masters degree in Sociology and Psychology of management in 2004.
                       While on the path of gaining first higher education, I was working as a System administrator and Full Stack developer for a Moscow branch of building company “Wesemann Group GmbH”.
                       In 2004 I’ve moved to Frankfurt, Germany, where I continued studying Computer Science, as well as Philosophy and History of Arts.
