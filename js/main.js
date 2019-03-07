@@ -1,4 +1,5 @@
-let projects = [ { name: "Global Solutions, React App", link: "http://gsrentz.com/", image: "img/gsolutions.png", visibility: true },
+let projects = [ { name: "Sophie Sula Interiors, Web App", link: "https://sophiesulainteriors.com/", image: "img/sophieSula.png", visibility: true },
+                 { name: "Global Solutions, React App", link: "http://gsrentz.com/", image: "img/gsolutions.png", visibility: true },
                  { name: "Venues Map, React App", link: "https://github.com/WKDavid/ReactVenuesMapApp", image: "img/ReactVenuesApp.png", visibility: true },
                  { name: "My Reads, React App", link: "https://github.com/WKDavid/MyReadsReactApp", image: "img/MyReadsReact.png", visibility: true },
                  { name: "Restaurant Reviews, Web App", link: "https://github.com/WKDavid/RestaurantReviewsWebApp", image: "img/RestaurantReviews.png", visibility: true },

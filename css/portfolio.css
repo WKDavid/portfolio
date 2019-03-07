@@ -27,12 +27,12 @@
   flex-wrap: nowrap;
 }
 
-.logo {
+/* .logo {
   height: 10vw;
   width: 20vw;
   max-width: 260px;
   max-height: 123px;
-}
+} */
 
 .name-proff {
   font-size: calc(10px + (30 - 10) * ((100vw - 300px) / (1600 - 300)));
