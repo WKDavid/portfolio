@@ -72,7 +72,7 @@ filterProjects = () => {
 }
 
 window.onload = function() {
-  var loadingImg = document.getElementsByClassName("loading")[0];
+  var loadingImg = document.getElementsByClassName("loadingCont")[0];
   loadingImg.style.display = "none";
 };
 

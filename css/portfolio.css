@@ -11,12 +11,20 @@
   font-family: 'Quicksand', sans-serif;
 }
 
-.loading {
+.loadingCont {
   z-index: 99;
   position: fixed;
   top: 0; right: 0; bottom: 0; left: 0;
   width: 100%;
   height: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.loading {
+  height: auto;
+  width: auto;
 }
 
 /* .video-foreground, iframe {
@@ -268,6 +276,15 @@ a, a:visited, a:hover, a:active {
   .projectContainer {
     width: 30vw;
     height: 30vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .center-part {
+    height: 59vw;
+  }
+  .shortBio {
+    height: 100%;
   }
 }
 
