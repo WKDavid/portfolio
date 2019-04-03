@@ -12,13 +12,12 @@ let projects = [ { name: "Sophie Sula Interiors, Web App", link: "https://sophie
                  { name: "Business Card for Android, XML", link: "https://github.com/WKDavid/Business-Card-for-Android", image: "img/bcapp.png", visibility: true } ];
 
 let shortBio = document.getElementsByClassName("shortBio")[0];
-shortBio.innerHTML = `Welcome to my world, please allow me a brief introduction.
-                      Being passionate about computer sciences since adolescent years, I've widened my horizons by gaining Masters degree in Sociology and Psychology of management in 2004.
-                      While on the path of gaining first higher education, I was working as a System administrator and Full Stack developer for a Moscow branch of building company “Wesemann Group GmbH”.
-                      In 2004 I’ve moved to Frankfurt, Germany, where I continued studying Computer Science, as well as Philosophy and History of Arts.
-                      Simultaneously, I’ve been working as a system and network administrator for two hotel chains; “Meininger” and “Colour”.
-                      In 2013 I’ve moved to Los Angeles, California. Here, at Udacity and Udemy, I have gained additional education in modern Web Development.
-                      Please have a look at my projects in order to subjectively assess my skill set, which includes: JavaScript, jQuery, CSS, PHP, HTML, XHTML, XML, AngularJS, BackboneJS, EmberJS,
+shortBio.innerHTML = `Welcome to my portfolio, please allow me a brief introduction.
+                      My name is David and I am a professional Web Developer. I have a vast experience of working in the field of IT since 1990's. Since early 2000's I've been actively engaged in
+                      the field of Web Development. In 2012 I've graduated from the Goethe University in Frankfurt, Germany and gained Bachelor's Degree in Computer Science.
+                      As I am constantly aimed at honing my skills, I've been gaining additional qualifications by taking courses in modern Web Development at Udacity and Udemy.
+                      I hope, the list of my most recent and relevant projects below will help you to assess my skill set, which includes:
+                      JavaScript, jQuery, CSS, PHP, HTML, XHTML, XML, AngularJS, BackboneJS, EmberJS,
                       Bootstrap, Java, .Net, ASP.NET, Python, MySQL, GitHub, Apache Flex, JavaFX, cPanel, WordPress, Shopify, WooCommerce and big variety of graphic design programs such as:
                       Photoshop, Lightroom, Illustrator, InDesign, Animate, Dreamweaver, Fuse, Adobe Muse etc.`;
 
@@ -71,6 +70,11 @@ filterProjects = () => {
       }
     }
 }
+
+window.onload = function() {
+  var loadingImg = document.getElementsByClassName("loading")[0];
+  loadingImg.style.display = "none";
+};
 
 openLink = (link) => {
   window.open(link);

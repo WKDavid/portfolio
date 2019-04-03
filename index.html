@@ -10,16 +10,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>David Yurkin Portfolio</title>
   <link rel="stylesheet" href="css/portfolio.css">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 </head>
 
 <body class="main-page">
-  <div class="video-foreground">
+  <img class="loading" src="img/loading.gif" alt="animated loading screen"/>
+  <!-- <div class="video-foreground">
     <iframe src="https://www.youtube.com/embed/AbWBviQCMEE?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=AbWBviQCMEE" frameborder="0" allow="autoplay; fullscreen"></iframe>
-  </div>
+  </div> -->
   <header class="top-part">
     <div class="contact-info-cont">
-      <a href="tel:+13235087894" target="_blank" rel="noopener noreferrer" class="contact-info">Call or Text Me At 1-323-508-7894</a>
-      <a href="mailto:david.yurkin@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-info">Email: David.Yurkin@gmail.com</a>
+      <a href="tel:+13235087894" target="_blank" rel="noopener noreferrer" class="contact-info" tabIndex="0">Phone: 1-323-508-7894</a>
+      <a href="mailto:david.yurkin@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-info" tabIndex="0">Email: David.Yurkin@gmail.com</a>
     </div>
     <div class="name-proff">
       <h1 class="full-name">David Yurkin</h1>
@@ -30,10 +32,13 @@
 <hr>
 
   <main class="center-part">
-    <img class="myPicture" src="img/myphoto.jpg" alt="a picture of the author">
+    <img class="myPicture" src="img/myphoto.jpg" alt="author">
     <div class="shortBio"></div>
   </main>
 
+  <div class="resumeCont">
+    <a href="ResumeDavidYurkin.pdf" target="_blank" rel="noopener noreferrer" class="resume" tabIndex="0">View Résumé</a>
+  </div>
   <h2 class="featured-work">Featured Work</h2>
   <input class="filter" type="text" name="filter" placeholder="Filter my projects by keywords" onkeyup="filterProjects()">
 

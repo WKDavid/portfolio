@@ -7,18 +7,26 @@
 }
 
 .main-page {
-  background-color: white;
-  font-family: helvetica, georgia, verdana;
+  background-color: black;
+  font-family: 'Quicksand', sans-serif;
 }
 
-.video-foreground, iframe {
+.loading {
+  z-index: 99;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* .video-foreground, iframe {
   z-index: -99;
   position: fixed;
   top: 0; right: 0; bottom: 0; left: 0;
   width: 100%;
   height: 100%;
   pointer-events: none;
-}
+} */
 
 .top-part {
   width: 100%;
@@ -42,16 +50,21 @@
 .full-name, .proff {
   text-align: center;
   margin: auto;
-  background:url('../img/gTexture.jpg');
-  background-repeat:repeat-x;
+  background:url('../img/gTexture.jpg') no-repeat center center;
+  background-size: cover;
+	color: #fff;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+  /* background-repeat:repeat-x;
   background-position:0 0;
-  color:transparent;
+  background-size: cover;
+  color: #fff;
   -webkit-font-smoothing:antialiased;
   -webkit-background-clip:text;
   -moz-background-clip:text;
   background-clip:text;
   -webkit-text-fill-color:transparent;
-  animation: backgroundEthereal 11s linear infinite;
+  animation: backgroundEthereal 11s linear infinite; */
 }
 
 .center-part {
@@ -83,7 +96,6 @@
 .shortBio {
   width: 50%;
   height: 28vw;
-  font-family: inherit;
   overflow-y: scroll;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.82);
@@ -98,18 +110,33 @@
   color: #ffffff;
 }
 
+.resumeCont {
+  margin: 0.3%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.resume {
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  font-size: calc(14px + (28 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
 .filter {
   width: 50%;
   height: 14%;
   margin-left: 25%;
   background-color: transparent;
-  animation-name: borderGlow;
+  border-color:#ffffff;
+  /* animation-name: borderGlow;
   animation-duration: 3s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: infinite; */
   border-radius: 5px;
   color: #ffffff;
   text-align: center;
-  font-family: inherit;
   font-size: calc(10px + (18 - 10) * ((100vw - 300px) / (1600 - 300)));
 }
 
@@ -139,9 +166,10 @@
   align-items: center;
   border-style: solid;
   border-radius: 5px;
-  animation-name: borderGlow;
+  border-color:#ffffff;
+  /* animation-name: borderGlow;
   animation-duration: 3s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: infinite; */
   width: 20vw;
   height: 20vw;
   margin: 0.3vw;
@@ -206,20 +234,20 @@ a, a:visited, a:hover, a:active {
   cursor: pointer;
 }
 
-@keyframes backgroundEthereal {
+/* @keyframes backgroundEthereal {
   from {
       background-position: 0 0
   }
   to {
       background-position: 100% 0
   }
-}
+} */
 
-@keyframes borderGlow {
+/* @keyframes borderGlow {
     0%   {border-color:#ffffff;}
     50%  {border-color:#0a0b0b;}
     100% {border-color:#ffffff;}
-}
+} */
 
 /* @keyframes colorGlow {
     0%   {color:#596574;}
