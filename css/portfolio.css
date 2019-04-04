@@ -297,8 +297,7 @@ a, a:visited, a:hover, a:active {
     content: url("../img/loadingMobile.svg");
   }
   .shortBio {
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin: 1%;
     width: 100%;
   }
 }
